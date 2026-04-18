@@ -326,6 +326,49 @@ const DATA = {
 };
 
 
+// ===== SHARED QUIZ (loaded from quiz-data.js) =====
+// Map student lesson IDs → admin lesson IDs from QUIZ_MODULES.
+const ADMIN_LESSON_MAP = {
+  hujayra: ["lesson_1", "lesson_2"],
+  organellalar: ["lesson_3", "lesson_4"],
+  "toqima-turlari": ["lesson_5"],
+  organlar: ["lesson_6"],
+  gormonlar: ["lesson_7"],
+  "bez-turlari": ["lesson_8"],
+  skelet: ["lesson_9"],
+  mushaklar: ["lesson_10"]
+};
+
+function loadSharedQuiz() {
+  if (typeof QUIZ_MODULES === "undefined") return;
+  const allAdminLessons = QUIZ_MODULES.flatMap(m => m.lessons);
+  for (const sec of DATA.sections) {
+    for (const lesson of sec.lessons) {
+      const adminIds = ADMIN_LESSON_MAP[lesson.id];
+      if (!adminIds || !adminIds.length) continue;
+      const questions = adminIds
+        .map(id => allAdminLessons.find(l => l.id === id))
+        .filter(Boolean)
+        .flatMap(l => l.questions);
+      if (!questions.length) continue;
+      lesson.adminLessonIds = adminIds;
+      lesson.quiz = questions.map((q, i) => {
+        const idx = q.options.indexOf(q.correctAnswer);
+        return {
+          _id: q.id,
+          type: "find",
+          chip: i % 2 === 0 ? "👆 Toping" : "🧩 Moslang",
+          q: q.question,
+          options: q.options,
+          answer: idx >= 0 ? idx : 0,
+          explanation: `To'g'ri javob — ${q.correctAnswer}.`
+        };
+      });
+    }
+  }
+}
+loadSharedQuiz();
+
 // ===== STATE =====
 const state = {
   tab: "home",
@@ -1322,6 +1365,22 @@ function syncToAdmin() {
       correctQ += q.correct || 0;
     }
   });
+  // Build per-question answer map (admin-format question IDs)
+  const answers = {};
+  const completedAdminIds = [];
+  done.forEach(l => {
+    const prog = state.progress[l.id];
+    const quizState = prog?.quiz;
+    if (l.adminLessonIds) completedAdminIds.push(...l.adminLessonIds);
+    if (!quizState?.answers || !l.quiz) return;
+    l.quiz.forEach((item, i) => {
+      if (!item._id) return;
+      const wasCorrect = quizState.answers[i] === true;
+      const picked = wasCorrect ? item.options[item.answer] : item.options.find((_, k) => k !== item.answer);
+      answers[item._id] = picked || item.options[item.answer];
+    });
+  });
+
   const live = {
     studentId: "s1",
     streak: state.streak,
@@ -1332,6 +1391,8 @@ function syncToAdmin() {
     completedLessonCount: done.length,
     totalLessons: total,
     completedIds: done.map(l => l.id),
+    completedAdminLessonIds: completedAdminIds,
+    answers,
     updated: Date.now()
   };
   try { localStorage.setItem(ADMIN_SYNC_KEY, JSON.stringify(live)); } catch (e) {}
