@@ -13,6 +13,9 @@ const DATA = {
           title: "Hujayra tuzilishi",
           subtitle: "Hujayra qismlari va ularning joylashuvi",
           done: true,
+          images: ["images/cell.jpg", "images/organelles.jpg", "images/er.jpg"],
+          captions: ["Hujayra tuzilishi", "Endoplazmatik to'r va Golji majmuasi", "Endoplazmatik to'r (ERT)"],
+          video: { youtubeId: "TVxtlfUwIY0", title: "Cell parts and their functions", source: "Khan Academy" },
           hotspots: [
             { label: "Yadro",              x: 0.50, y: 0.45, icon: "🧠", desc: "Hujayra markazida joylashadi. Irsiy ma'lumotni saqlaydi va hujayra faoliyatini boshqaradi." },
             { label: "Hujayra membranasi", x: 0.88, y: 0.32, icon: "🛡",  desc: "Hujayrani tashqi muhitdan ajratib turadi va moddalarni tanlab o'tkazadi." },
@@ -28,11 +31,11 @@ const DATA = {
             "Yadro hujayra markazida joylashib, irsiy ma'lumotni saqlaydi."
           ],
           terms: [
-            { icon: "🧫", name: "Hujayra membranasi", desc: "Sitoplazma va organoidlarni o'rab turadigan ikki qavatli juda yupqa parda." },
-            { icon: "💧", name: "Sitoplazma", desc: "Hujayraning ichki qismini to'ldiradigan quyuq modda." },
-            { icon: "🧬", name: "Yadro", desc: "Hujayra markazida joylashadi. Yadrocha va xromatindan iborat. Irsiy belgilarni nasldan-naslga o'tkazadi." },
-            { icon: "🕸️", name: "Endoplazmatik to'r", desc: "Hujayra ichida moddalarni sintez qilish va ularni kerakli joylarga tashishda xizmat qiladi." },
-            { icon: "📦", name: "Golji majmuasi", desc: "Yadro atrofida joylashgan. Hujayrada to'plangan moddalarni saqlash, taqsimlash vazifasini bajaradi." }
+            { icon: "🧫", name: "Hujayra membranasi", desc: "Sitoplazma va organoidlarni o'rab turadigan ikki qavatli juda yupqa parda.", image: "images/cell.jpg" },
+            { icon: "💧", name: "Sitoplazma", desc: "Hujayraning ichki qismini to'ldiradigan quyuq modda.", image: "images/cell.jpg" },
+            { icon: "🧬", name: "Yadro", desc: "Hujayra markazida joylashadi. Yadrocha va xromatindan iborat. Irsiy belgilarni nasldan-naslga o'tkazadi.", image: "images/chromosomes.jpg" },
+            { icon: "🕸️", name: "Endoplazmatik to'r", desc: "Hujayra ichida moddalarni sintez qilish va ularni kerakli joylarga tashishda xizmat qiladi.", image: "images/er.jpg" },
+            { icon: "📦", name: "Golji majmuasi", desc: "Yadro atrofida joylashgan. Hujayrada to'plangan moddalarni saqlash, taqsimlash vazifasini bajaradi.", image: "images/organelles.jpg" }
           ],
           quiz: [
             {
@@ -84,6 +87,9 @@ const DATA = {
           title: "Organellalar vazifasi",
           subtitle: "Ribosoma, lizosoma, mitoxondriya, vakuola va xromosomalar",
           done: false,
+          images: ["images/mitochondria.jpg", "images/chromosomes.jpg", "images/organelles.jpg", "images/er.jpg"],
+          captions: ["Mitoxondriya", "Xromosomalar", "Ribosoma va Golji majmuasi", "Endoplazmatik to'r"],
+          video: { youtubeId: "bWPQvxElpLY", title: "Organelles in eukaryotic cells", source: "Khan Academy" },
           facts: [
             "Ribosoma — oqsil sintez qiluvchi kichik organella.",
             "Mitoxondriya hujayra uchun energiya (ATF) ishlab chiqaradi.",
@@ -92,11 +98,11 @@ const DATA = {
             "Xromosomalar yadro ichida joylashgan va irsiy axborotni uzatadi."
           ],
           terms: [
-            { icon: "⚙️", name: "Ribosoma", desc: "Oqsil sintezini amalga oshiradigan mayda organella. Endoplazmatik to'r ustida joylashgan." },
-            { icon: "🔋", name: "Mitoxondriya", desc: "Hujayra uchun energiya ishlab chiqaradi. Hujayraning energetik stantsiyasi deyiladi." },
+            { icon: "⚙️", name: "Ribosoma", desc: "Oqsil sintezini amalga oshiradigan mayda organella. Endoplazmatik to'r ustida joylashgan.", image: "images/er.jpg" },
+            { icon: "🔋", name: "Mitoxondriya", desc: "Hujayra uchun energiya ishlab chiqaradi. Hujayraning energetik stantsiyasi deyiladi.", image: "images/mitochondria.jpg" },
             { icon: "🧹", name: "Lizosoma", desc: "Keraksiz moddalarni parchalab, hujayrani tozalab turadi." },
             { icon: "💠", name: "Vakuola", desc: "Suv, oziq moddalar va keraksiz chiqindilarni saqlaydigan bo'shliq." },
-            { icon: "🧬", name: "Xromosoma", desc: "Yadro ichidagi DNK molekulalaridan tashkil topgan irsiy birlik." }
+            { icon: "🧬", name: "Xromosoma", desc: "Yadro ichidagi DNK molekulalaridan tashkil topgan irsiy birlik.", image: "images/chromosomes.jpg" }
           ],
           quiz: [
             { type: "find", chip: "👆 Toping", q: "Hujayraning energiya stantsiyasi qaysi?",
@@ -129,6 +135,9 @@ const DATA = {
           title: "To'qima turlari",
           subtitle: "Epiteliy, biriktiruvchi, muskul va nerv to'qimalari",
           done: false,
+          images: ["images/tissues.jpg", "images/blood.jpg", "images/muscles.png", "images/nerve.jpg", "images/tissue-cells.png"],
+          captions: ["Epiteliy to'qimasi", "Biriktiruvchi to'qima (qon)", "Muskul to'qimasi", "Nerv to'qimasi", "To'qima hujayralari"],
+          video: { youtubeId: "i5tR3csCWYo", title: "Tissues, Part 1: Crash Course A&P", source: "CrashCourse A&P" },
           facts: [
             "To'qima — tuzilishi va vazifasi bir xil bo'lgan hujayralar guruhi.",
             "Odam organizmida 4 ta asosiy to'qima turi mavjud.",
@@ -138,10 +147,10 @@ const DATA = {
             "Nerv to'qimasi ma'lumotni qabul qilib, uzatadi."
           ],
           terms: [
-            { icon: "🧱", name: "Epiteliy to'qimasi", desc: "Tana yuzasi va ichki a'zolar devorini qoplaydigan zich joylashgan hujayralar qatlami." },
-            { icon: "🧵", name: "Biriktiruvchi to'qima", desc: "Qon, suyak, tog'ay, yog' to'qimalari. A'zolarni bog'laydi, tayanch va himoya qiladi." },
-            { icon: "💪", name: "Muskul to'qimasi", desc: "Qisqarish xususiyatiga ega. Tana va ichki a'zolar harakatini ta'minlaydi." },
-            { icon: "🧠", name: "Nerv to'qimasi", desc: "Nerv hujayralaridan tashkil topgan. Qo'zg'alish va impuls uzatish xususiyatiga ega." }
+            { icon: "🧱", name: "Epiteliy to'qimasi", desc: "Tana yuzasi va ichki a'zolar devorini qoplaydigan zich joylashgan hujayralar qatlami.", image: "images/tissues.jpg" },
+            { icon: "🧵", name: "Biriktiruvchi to'qima", desc: "Qon, suyak, tog'ay, yog' to'qimalari. A'zolarni bog'laydi, tayanch va himoya qiladi.", image: "images/blood.jpg" },
+            { icon: "💪", name: "Muskul to'qimasi", desc: "Qisqarish xususiyatiga ega. Tana va ichki a'zolar harakatini ta'minlaydi.", image: "images/muscles.png" },
+            { icon: "🧠", name: "Nerv to'qimasi", desc: "Nerv hujayralaridan tashkil topgan. Qo'zg'alish va impuls uzatish xususiyatiga ega.", image: "images/nerve.jpg" }
           ],
           quiz: [
             { type: "find", chip: "👆 Toping", q: "Odam tanasida nechta asosiy to'qima turi bor?",
@@ -166,6 +175,9 @@ const DATA = {
           title: "Organlar va organlar sistemasi",
           subtitle: "Organ, organlar sistemasi va organizm tushunchasi",
           done: false,
+          images: ["images/organ-heart.jpg", "images/brain.png", "images/tissue-cells.png"],
+          captions: ["Yurak — ichki organ", "Miya — asab organi", "Organlar tuzilishi"],
+          video: { youtubeId: "YE2peDF4Zqg", title: "Organization in the human body", source: "Khan Academy" },
           facts: [
             "Organ — muayyan vazifani bajaradigan to'qimalar birikmasi.",
             "Bir necha organlar birlashib, organlar sistemasini hosil qiladi.",
@@ -173,9 +185,9 @@ const DATA = {
             "Organlar sistemalari birgalikda organizmni tashkil qiladi."
           ],
           terms: [
-            { icon: "❤️", name: "Organ", desc: "Muayyan shakl va vazifaga ega bo'lgan to'qimalar birikmasi. Masalan, yurak, jigar, o'pka." },
-            { icon: "🔗", name: "Organlar sistemasi", desc: "Umumiy vazifani bajaruvchi organlar guruhi. Masalan, hazm sistemasi." },
-            { icon: "🧍", name: "Organizm", desc: "Barcha organlar va sistemalarning uyg'un ishlashidan hosil bo'lgan yaxlit tirik tizim." }
+            { icon: "❤️", name: "Organ", desc: "Muayyan shakl va vazifaga ega bo'lgan to'qimalar birikmasi. Masalan, yurak, jigar, o'pka.", image: "images/organ-heart.jpg" },
+            { icon: "🔗", name: "Organlar sistemasi", desc: "Umumiy vazifani bajaruvchi organlar guruhi. Masalan, hazm sistemasi.", image: "images/tissue-cells.png" },
+            { icon: "🧍", name: "Organizm", desc: "Barcha organlar va sistemalarning uyg'un ishlashidan hosil bo'lgan yaxlit tirik tizim.", image: "images/brain.png" }
           ],
           quiz: [
             { type: "find", chip: "👆 Toping", q: "Organ nima?",
@@ -205,6 +217,9 @@ const DATA = {
           title: "Bez turlari",
           subtitle: "Tashqi, ichki va aralash sekretsiya bezlari",
           done: false,
+          images: ["images/glands-thyroid.jpg", "images/hormones-pituitary.jpg", "images/pineal.png", "images/thymus.jpg", "images/adrenal.png"],
+          captions: ["Qalqonsimon bez", "Gipofiz bezi", "Epifiz bezi", "Ayrisimon bez (timus)", "Buyrakusti bezi"],
+          video: { youtubeId: "f_Z1zsR9lFM", title: "Intro to the endocrine system", source: "Khan Academy" },
           facts: [
             "Bezlar modda ishlab chiqaradigan maxsus organlardir.",
             "Tashqi sekretsiya bezlari mahsulotini nay orqali tashqariga chiqaradi.",
@@ -213,8 +228,8 @@ const DATA = {
           ],
           terms: [
             { icon: "💦", name: "Tashqi sekretsiya bezi", desc: "So'lak, ter, yosh bezlari — mahsulotini nay orqali chiqaradi." },
-            { icon: "🧪", name: "Ichki sekretsiya bezi", desc: "Qalqonsimon, gipofiz kabi bezlar — gormonlarni bevosita qonga ajratadi." },
-            { icon: "⚗️", name: "Aralash bez", desc: "Me'da osti bezi, jinsiy bezlar — ham tashqi, ham ichki sekretsiyaga ega." }
+            { icon: "🧪", name: "Ichki sekretsiya bezi", desc: "Qalqonsimon, gipofiz kabi bezlar — gormonlarni bevosita qonga ajratadi.", image: "images/glands-thyroid.jpg" },
+            { icon: "⚗️", name: "Aralash bez", desc: "Me'da osti bezi, jinsiy bezlar — ham tashqi, ham ichki sekretsiyaga ega.", image: "images/adrenal.png" }
           ],
           quiz: [
             { type: "find", chip: "👆 Toping", q: "Gormon ishlab chiqaradigan bezlar qanday ataladi?",
@@ -233,6 +248,9 @@ const DATA = {
           title: "Gormonlar",
           subtitle: "Asosiy gormonlar va ularning vazifalari",
           done: false,
+          images: ["images/hormones-pituitary.jpg", "images/cretinism.jpg", "images/myxedema.jpg", "images/goiter.jpg", "images/basedow.jpg", "images/gigantism.jpg", "images/acromegaly.jpg"],
+          captions: ["Gipofiz gormoni", "Kretinizm", "Miksidema", "Endemik buqoq", "Bazedov kasalligi", "Gigantizm va nanizm", "Akromegaliya"],
+          video: { youtubeId: "-SPRPkLoKp8", title: "How do your hormones work?", source: "TED-Ed" },
           facts: [
             "Gormonlar — ichki sekretsiya bezlari ishlab chiqaradigan biologik faol moddalar.",
             "Insulin qondagi shakar miqdorini boshqaradi.",
@@ -241,8 +259,8 @@ const DATA = {
           ],
           terms: [
             { icon: "🍬", name: "Insulin", desc: "Me'da osti bezi gormoni. Qonda shakar miqdorini pasaytiradi." },
-            { icon: "⚡", name: "Adrenalin", desc: "Buyrak usti bezi gormoni. Stress va xavf paytida ajraladi." },
-            { icon: "🦋", name: "Tiroksin", desc: "Qalqonsimon bez gormoni. Modda almashinuvi va o'sishga ta'sir qiladi." }
+            { icon: "⚡", name: "Adrenalin", desc: "Buyrak usti bezi gormoni. Stress va xavf paytida ajraladi.", image: "images/adrenal.png" },
+            { icon: "🦋", name: "Tiroksin", desc: "Qalqonsimon bez gormoni. Modda almashinuvi va o'sishga ta'sir qiladi.", image: "images/glands-thyroid.jpg" }
           ],
           quiz: [
             { type: "find", chip: "👆 Toping", q: "Qondagi shakarni qaysi gormon boshqaradi?",
@@ -269,6 +287,9 @@ const DATA = {
           title: "Odam skeleti",
           subtitle: "Skelet bo'limlari va suyak turlari",
           done: false,
+          images: ["images/skull.gif", "images/skull-face.png", "images/ribcage.png", "images/sternum.jpg", "images/femur.jpg", "images/radius-ulna.jpg", "images/hand-skeleton.jpg", "images/patella.png"],
+          captions: ["Bosh skeleti (animatsiya)", "Yuz skeleti", "Ko'krak qafasi", "To'sh suyagi", "Son suyagi", "Bilak va tirsak suyaklari", "Panja skeleti", "Tizza qopqog'i"],
+          video: { youtubeId: "-lrKDRAbP38", title: "Skeletal structure and function", source: "Khan Academy" },
           facts: [
             "Odam skeleti taxminan 206 ta suyakdan iborat.",
             "Skelet bosh, tana va qo'l-oyoq skeletiga bo'linadi.",
@@ -276,9 +297,9 @@ const DATA = {
             "Bosh miyaga bosh suyaklari qutisi himoya qiladi."
           ],
           terms: [
-            { icon: "💀", name: "Bosh skeleti", desc: "Miyani himoyalovchi bosh suyaklari qutisi va yuz suyaklaridan tashkil topgan." },
+            { icon: "💀", name: "Bosh skeleti", desc: "Miyani himoyalovchi bosh suyaklari qutisi va yuz suyaklaridan tashkil topgan.", image: "images/skull-face.png" },
             { icon: "🦴", name: "Umurtqa pog'onasi", desc: "Tana skeletining asosi. 33-34 ta umurtqadan iborat." },
-            { icon: "🤲", name: "Qo'l-oyoq skeleti", desc: "Yelka, bilak, panja va son, boldir, oyoq panjasi suyaklari." }
+            { icon: "🤲", name: "Qo'l-oyoq skeleti", desc: "Yelka, bilak, panja va son, boldir, oyoq panjasi suyaklari.", image: "images/hand-skeleton.jpg" }
           ],
           quiz: [
             { type: "find", chip: "👆 Toping", q: "Odam skeleti nechta suyakdan iborat?",
@@ -297,6 +318,9 @@ const DATA = {
           title: "Mushaklar va harakat",
           subtitle: "Mushak turlari va qisqarish mexanizmi",
           done: false,
+          images: ["images/muscles.png", "images/muscle-fibers.png"],
+          captions: ["Muskul turlari", "Muskul tolalari"],
+          video: { youtubeId: "VVL-8zr2hk4", title: "How your muscular system works", source: "TED-Ed" },
           facts: [
             "Odam tanasida 600 dan ortiq mushak mavjud.",
             "Mushaklar skelet, silliq va yurak mushaklariga bo'linadi.",
@@ -304,9 +328,9 @@ const DATA = {
             "Yurak mushagi ixtiyorsiz, to'xtovsiz ishlaydi."
           ],
           terms: [
-            { icon: "💪", name: "Skelet mushaklari", desc: "Suyaklarga birikkan, ongli boshqariladigan mushaklar. Tana harakatini ta'minlaydi." },
-            { icon: "🌀", name: "Silliq mushaklar", desc: "Ichki a'zolar devorida joylashgan, ixtiyorsiz qisqaradigan mushaklar." },
-            { icon: "❤️", name: "Yurak mushagi", desc: "Faqat yurakda uchraydi. Butun umr davomida to'xtovsiz ishlaydi." }
+            { icon: "💪", name: "Skelet mushaklari", desc: "Suyaklarga birikkan, ongli boshqariladigan mushaklar. Tana harakatini ta'minlaydi.", image: "images/muscles.png" },
+            { icon: "🌀", name: "Silliq mushaklar", desc: "Ichki a'zolar devorida joylashgan, ixtiyorsiz qisqaradigan mushaklar.", image: "images/muscle-fibers.png" },
+            { icon: "❤️", name: "Yurak mushagi", desc: "Faqat yurakda uchraydi. Butun umr davomida to'xtovsiz ishlaydi.", image: "images/organ-heart.jpg" }
           ],
           quiz: [
             { type: "find", chip: "👆 Toping", q: "Yurak mushagi qanday ishlaydi?",
@@ -378,7 +402,10 @@ const state = {
     hujayra: { completed: false, percent: 0, quiz: null }
   },
   activeLessonTab: "organ",
-  streak: 0
+  streak: 0,
+  xp: 0,
+  lastQuizDate: 0,
+  unlockedBadges: []
 };
 
 // ===== UTIL =====
@@ -403,12 +430,46 @@ const h = (html) => {
   return t.content.firstElementChild;
 };
 
+// ===== HASH ROUTING =====
+function buildHash(route) {
+  const r = route;
+  if (r.name === "section") return "#/section/" + r.sectionId;
+  if (r.name === "lesson")  return "#/lesson/"  + r.lessonId;
+  if (r.name === "quiz")    return "#/quiz/"    + r.lessonId;
+  if (r.name === "result")  return "#/result/"  + r.lessonId;
+  return "#/" + r.name;
+}
+
+function parseHash(hash) {
+  const parts = (hash || "").replace(/^#\//, "").split("/");
+  const name = parts[0] || "home";
+  if (name === "section" && parts[1]) return { name: "section", sectionId: parts[1] };
+  if (name === "lesson"  && parts[1]) return { name: "lesson",  lessonId: parts[1] };
+  if (name === "quiz"    && parts[1]) return { name: "quiz",    lessonId: parts[1] };
+  if (name === "result"  && parts[1]) return { name: "result",  lessonId: parts[1] };
+  const valid = ["home","lessons","glossary","results","profile","welcome"];
+  return { name: valid.includes(name) ? name : "home" };
+}
+
 function go(route, tab) {
   state.route = route;
   if (tab) state.tab = tab;
+  history.pushState({ route, tab: state.tab }, "", buildHash(route));
   render();
   window.scrollTo({ top: 0, behavior: "instant" });
 }
+
+window.addEventListener("popstate", (e) => {
+  const s = e.state;
+  if (s && s.route) {
+    state.route = s.route;
+    if (s.tab) state.tab = s.tab;
+  } else {
+    state.route = parseHash(window.location.hash);
+  }
+  render();
+  window.scrollTo({ top: 0, behavior: "instant" });
+});
 
 function getRouteSection() {
   const r = state.route;
@@ -516,6 +577,9 @@ function HomeView() {
   const { done, total } = overallCount();
   const wrap = el("div");
 
+  // pull-to-refresh indicator (touch handler in INIT attaches to #view)
+  wrap.append(h(`<div class="ptr-indicator">⟳ Yangilanmoqda...</div>`));
+
   // greeting
   wrap.append(h(`
     <div class="greet">
@@ -535,6 +599,22 @@ function HomeView() {
         <div class="icon">✓</div>
         <div><div class="num">${done}</div><div class="lbl">Darslar</div></div>
       </div>
+    </div>
+  `));
+
+  // XP / Level bar
+  const xpForNext = 50;
+  const xpLevel = Math.floor((state.xp || 0) / xpForNext) + 1;
+  const xpProgress = (state.xp || 0) % xpForNext;
+  const xpPct = Math.round((xpProgress / xpForNext) * 100);
+  wrap.append(h(`
+    <div class="card xp-card">
+      <div class="between">
+        <div class="xp-label">⚡ Daraja ${xpLevel}</div>
+        <div class="xp-pts">${state.xp || 0} XP jami</div>
+      </div>
+      <div class="bar" style="margin-top:8px"><span style="width:${xpPct}%"></span></div>
+      <div class="small" style="margin-top:5px">Keyingi darajaga ${xpForNext - xpProgress} XP qoldi</div>
     </div>
   `));
 
@@ -643,7 +723,7 @@ function SectionView(sectionId) {
   const wrap = el("div");
 
   wrap.append(Header(s.title, { back: () => go({ name: "home" }, "home") }));
-  wrap.append(h(`<div class="crumbs">Bo'limlar › <b>${s.title.slice(0, 22)}...</b></div>`));
+  wrap.append(h(`<div class="crumbs">Bo'limlar › <b class="crumb-section">${s.title}</b></div>`));
 
   const doneCt = s.lessons.filter(l => state.progress[l.id]?.completed).length;
   const total = s.lessons.length || 2;
@@ -706,11 +786,12 @@ function LessonView(lessonId) {
   const wrap = el("div");
 
   wrap.append(Header(lesson.title, { back: () => go({ name: "section", sectionId: section.id }) }));
-  wrap.append(h(`<div class="crumbs">Bo'limlar › ${section.title.slice(0, 18)}... › <b>${lesson.title}</b></div>`));
+  wrap.append(h(`<div class="crumbs">Bo'limlar › <span class="crumb-section">${section.title}</span> › <b>${lesson.title}</b></div>`));
 
   if (state.lastLessonId !== lessonId) {
     state.activeLessonTab = "organ";
     state.discoverSel = 0;
+    state.sliderIndex = 0;
     state.lastLessonId = lessonId;
   }
   if (!state.activeLessonTab) state.activeLessonTab = "organ";
@@ -891,23 +972,59 @@ function LessonView(lessonId) {
     cta.querySelector("button").addEventListener("click", () => go({ name: "quiz", lessonId }));
     wrap.append(cta);
   } else {
-    // image slider — show 2x2 diagram when lesson has 4+ terms
+    // image carousel — multi-image slider with swipe, captions, lazy-load
     const terms4 = lesson.terms.slice(0, 4);
-    const showGrid = terms4.length >= 4;
-    const frameInner = showGrid
-      ? `<div class="mini-diagram">${terms4.map((t, i) => `<div class="mcell" style="background:${tissueBgs[i]}">${t.icon}</div>`).join("")}</div>`
-      : `🔬`;
+    const images   = Array.isArray(lesson.images)   ? lesson.images   : (lesson.heroImage ? [lesson.heroImage] : []);
+    const captions = Array.isArray(lesson.captions) ? lesson.captions : [];
+    const hasImages = images.length > 0;
+    if (state.sliderIndex == null || state.sliderIndex < 0 || state.sliderIndex >= Math.max(images.length, 1)) {
+      state.sliderIndex = 0;
+    }
+    const showGrid = !hasImages && terms4.length >= 4;
+    const sIdx = state.sliderIndex;
+    const caption = captions[sIdx] || "";
 
-    wrap.append(h(`
+    const frameInner = hasImages
+      ? `<img class="hero-img" src="${images[sIdx]}" alt="${caption || lesson.title}" loading="lazy"/>`
+      : showGrid
+        ? `<div class="mini-diagram">${terms4.map((t, i) => `<div class="mcell" style="background:${tissueBgs[i]}">${t.icon}</div>`).join("")}</div>`
+        : `🔬`;
+
+    const dotsHtml = hasImages
+      ? images.map((_, i) => `<span class="${i === sIdx ? 'on' : ''}" data-dot="${i}"></span>`).join("")
+      : `<span></span><span class="on"></span><span></span>`;
+
+    const sliderEl = h(`
       <div class="slider">
-        <div class="frame" ${showGrid ? 'style="background:#f8fafc;padding:0"' : ''}>${frameInner}</div>
+        <div class="frame" ${hasImages ? 'style="background:#fff;padding:0"' : showGrid ? 'style="background:#f8fafc;padding:0"' : ''}>${frameInner}</div>
         <div class="ctrls">
-          <button>‹</button>
-          <div class="dots"><span></span><span class="on"></span><span></span></div>
-          <button>›</button>
+          <button data-slide="prev" aria-label="Oldingi rasm" ${hasImages && images.length > 1 ? '' : 'disabled'}>‹</button>
+          <div class="dots" role="tablist" aria-label="Rasm ${sIdx + 1} / ${images.length}">${dotsHtml}</div>
+          <button data-slide="next" aria-label="Keyingi rasm" ${hasImages && images.length > 1 ? '' : 'disabled'}>›</button>
         </div>
+        ${caption ? `<div class="slider-caption">${caption}</div>` : ""}
       </div>
-    `));
+    `);
+
+    if (hasImages && images.length > 1) {
+      const prev = () => { state.sliderIndex = (state.sliderIndex - 1 + images.length) % images.length; render(); };
+      const next = () => { state.sliderIndex = (state.sliderIndex + 1) % images.length; render(); };
+
+      sliderEl.querySelector('[data-slide="prev"]').addEventListener("click", prev);
+      sliderEl.querySelector('[data-slide="next"]').addEventListener("click", next);
+      sliderEl.querySelectorAll("[data-dot]").forEach(dot => {
+        dot.addEventListener("click", () => { state.sliderIndex = parseInt(dot.dataset.dot, 10); render(); });
+      });
+
+      // Touch swipe support
+      let _tx = 0;
+      sliderEl.addEventListener("touchstart", e => { _tx = e.touches[0].clientX; }, { passive: true });
+      sliderEl.addEventListener("touchend", e => {
+        const dx = e.changedTouches[0].clientX - _tx;
+        if (Math.abs(dx) > 40) dx < 0 ? next() : prev();
+      }, { passive: true });
+    }
+    wrap.append(sliderEl);
 
     // info
     const info = el("div", { class: "info" });
@@ -917,13 +1034,16 @@ function LessonView(lessonId) {
     info.append(ul);
     wrap.append(info);
 
-    // terms
+    // terms — show thumbnail image if available, otherwise emoji icon
     wrap.append(el("h2", {}, "Atamalar"));
     const tl = el("div", { class: "term-list" });
     lesson.terms.forEach(t => {
+      const leftEl = t.image
+        ? `<img class="term-thumb" src="${t.image}" alt="${t.name}" loading="lazy"/>`
+        : `<div class="ticon">${t.icon}</div>`;
       tl.append(h(`
         <div class="term">
-          <div class="ticon">${t.icon}</div>
+          ${leftEl}
           <div>
             <h4>${t.name}</h4>
             <p>${t.desc}</p>
@@ -933,19 +1053,40 @@ function LessonView(lessonId) {
     });
     wrap.append(tl);
 
-    // video
-    wrap.append(h(`
-      <div class="video-card">
-        <div class="ph">✋</div>
-        <div class="vt">Imo-ishora videosi</div>
-        <div class="vs">${lesson.title} — imo-ishora</div>
-        <div class="player">
-          <div class="play">▶</div>
-          <div class="track"><span></span></div>
-          <div class="time">0:00</div>
+    // video — ASL (English sign language) embed, or honest empty state if none sourced
+    if (lesson.video && lesson.video.youtubeId) {
+      const v = lesson.video;
+      const safeTitle = (v.title || lesson.title).replace(/"/g, "&quot;");
+      const safeSource = (v.source || "").replace(/</g, "&lt;");
+      wrap.append(h(`
+        <div class="video-card">
+          <div class="vc-head">
+            <span>📺 Video dars</span>
+            <span class="lang-chip">CC</span>
+          </div>
+          <div class="yt-frame">
+            <iframe
+              src="https://www.youtube-nocookie.com/embed/${v.youtubeId}?rel=0&modestbranding=1&playsinline=1&cc_load_policy=1&hl=en"
+              title="${safeTitle}"
+              loading="lazy"
+              allow="accelerometer; encrypted-media; picture-in-picture; fullscreen"
+              allowfullscreen></iframe>
+          </div>
+          <div class="vt" style="margin-top:10px;">${v.title || lesson.title}</div>
+          <a class="yt-link" href="https://www.youtube.com/watch?v=${v.youtubeId}" target="_blank" rel="noopener noreferrer">▶ YouTube-da ochish</a>
+          <div class="yt-hint">Subtitrlar (CC) yoqilgan — tugmani bosib tilni o'zgartirishingiz mumkin</div>
+          ${safeSource ? `<div class="credit">Manba: ${safeSource}</div>` : ``}
         </div>
-      </div>
-    `));
+      `));
+    } else {
+      wrap.append(h(`
+        <div class="video-card">
+          <div class="ph">✋</div>
+          <div class="vt">Imo-ishora videosi tez orada</div>
+          <div class="vs">Ushbu darsga video hozircha tayyorlanmoqda</div>
+        </div>
+      `));
+    }
 
     // CTA
     const cta = h(`<div class="sticky-cta"><button class="cta">🎮 Mashq qilish</button></div>`);
@@ -997,7 +1138,7 @@ function QuizView(lessonId) {
     </div>
   `));
 
-  wrap.append(h(`<div class="crumbs">Bo'limlar › ${section.title.slice(0, 14)}... › ${lesson.title} › <b>Mini test</b></div>`));
+  wrap.append(h(`<div class="crumbs">Bo'limlar › <span class="crumb-section">${section.title}</span> › <span class="crumb-section">${lesson.title}</span> › <b>Mini test</b></div>`));
 
   // dots
   const dotsHtml = quiz.map((_, i) => {
@@ -1047,6 +1188,8 @@ function QuizView(lessonId) {
       const correct = i === item.answer;
       q.answers[idx] = correct;
       if (correct) q.correct++;
+      // Haptic feedback for touch devices
+      if (navigator.vibrate) navigator.vibrate(correct ? [40] : [30, 50, 30]);
       render();
     });
     opts.append(btn);
@@ -1077,7 +1220,10 @@ function QuizView(lessonId) {
           percent: pct,
           quiz: q
         };
-        state.streak = Math.max(state.streak, 1) + 1;
+        updateStreak();
+        state.xp = (state.xp || 0) + 10;
+        const newBadge = checkBadges();
+        if (newBadge) setTimeout(() => showBadgeToast(newBadge), 700);
         saveProgress();
         go({ name: "result", lessonId });
       } else {
@@ -1087,7 +1233,12 @@ function QuizView(lessonId) {
     });
     wrap.append(nextCta);
   } else {
-    wrap.append(h(`<div class="help">❓ Yordam</div>`));
+    const helpEl = el("div", { class: "help" });
+    helpEl.append(h(`<span>❓ Javobni tanlang va tasdiqlang</span>`));
+    const helpBtn = el("button", { class: "help-link" }, "📖 Darsga qaytish");
+    helpBtn.addEventListener("click", () => { state.activeLessonTab = "organ"; go({ name: "lesson", lessonId }); });
+    helpEl.append(helpBtn);
+    wrap.append(helpEl);
   }
 
   return wrap;
@@ -1106,10 +1257,11 @@ function ResultView(lessonId) {
 
   const ringBg = `conic-gradient(var(--orange) ${pct * 3.6}deg, #e5e7eb 0)`;
 
+  const resultTitle = pct >= 80 ? "🎉 Ajoyib natija!" : pct >= 50 ? "👍 Yaxshi harakat!" : "📖 Qayta o'rganing";
   wrap.append(h(`
     <div class="result-card">
-      <div class="emoji-big">📚</div>
-      <h2>Qayta o'rganing</h2>
+      <div class="emoji-big">${pct >= 80 ? '🏆' : pct >= 50 ? '📘' : '📚'}</div>
+      <h2>${resultTitle}</h2>
       <div class="ring" style="background:${ringBg}">
         <div style="width:92px;height:92px;border-radius:99px;background:#fff;display:grid;place-items:center">${pct}%</div>
       </div>
@@ -1117,7 +1269,7 @@ function ResultView(lessonId) {
       <div class="stars">
         ${[0,1,2].map(i => `<span class="${i < stars ? 'on' : ''}">★</span>`).join("")}
       </div>
-      <div class="reward-pill">✨ +10 bilim ballari</div>
+      <div class="reward-pill">✨ +10 XP qo'shildi</div>
       <div class="q-dots" style="margin-top:16px">
         ${q.answers.map(a => `<span class="${a ? 'on' : 'bad'}"></span>`).join("")}
       </div>
@@ -1217,6 +1369,19 @@ function ResultsView() {
     </div>
   `));
 
+  // XP summary
+  const xpLevel2 = Math.floor((state.xp || 0) / 50) + 1;
+  const xpPct2 = Math.round(((state.xp || 0) % 50) / 50 * 100);
+  wrap.append(h(`
+    <div class="card xp-card">
+      <div class="between">
+        <div class="xp-label">⚡ Daraja ${xpLevel2}</div>
+        <div class="xp-pts">${state.xp || 0} XP jami</div>
+      </div>
+      <div class="bar" style="margin-top:8px"><span style="width:${xpPct2}%"></span></div>
+    </div>
+  `));
+
   wrap.append(el("h2", {}, "Bo'limlar bo'yicha"));
   DATA.sections.forEach(s => {
     const total = s.lessons.length || 2;
@@ -1236,22 +1401,25 @@ function ResultsView() {
   });
 
   wrap.append(h(`<h2>Yutuqlar</h2>`));
-  wrap.append(h(`
-    <div class="card" style="display:flex;gap:10px;flex-wrap:wrap">
-      <div style="text-align:center;flex:1;min-width:80px">
-        <div style="font-size:30px">${streak > 0 ? '🔥' : '⚪'}</div>
-        <div class="small">Streak ustasi</div>
+  const ub = state.unlockedBadges || [];
+  const badgeDefs = [
+    { id: "streak", icon: "🔥", label: "Streak ustasi",  hint: "Ketma-ket dars tugatish" },
+    { id: "first",  icon: "📚", label: "Birinchi dars",  hint: "Birinchi darsni tugatish" },
+    { id: "honor",  icon: "⭐", label: "A'lochi",         hint: "80%+ o'rtacha bal" }
+  ];
+  const badgeHtml = badgeDefs.map(b => {
+    const locked = !ub.includes(b.id);
+    return `
+      <div class="badge-item ${locked ? 'locked' : 'unlocked'}">
+        <div class="bi-icon">${locked ? '⚪' : b.icon}</div>
+        <div class="bi-label">${b.label}</div>
+        ${locked
+          ? `<div class="bi-hint">${b.hint}</div>`
+          : `<div class="bi-earned">✓ Qo'lga kiritildi</div>`}
       </div>
-      <div style="text-align:center;flex:1;min-width:80px">
-        <div style="font-size:30px">${pct >= 25 ? '📚' : '⚪'}</div>
-        <div class="small">Birinchi dars</div>
-      </div>
-      <div style="text-align:center;flex:1;min-width:80px">
-        <div style="font-size:30px">${avg >= 80 ? '⭐' : '⚪'}</div>
-        <div class="small">A'lochi</div>
-      </div>
-    </div>
-  `));
+    `;
+  }).join("");
+  wrap.append(h(`<div class="badges-grid">${badgeHtml}</div>`));
   return wrap;
 }
 
@@ -1339,6 +1507,9 @@ function saveProgress() {
     localStorage.setItem(STORAGE_KEY, JSON.stringify({
       progress: state.progress,
       streak: state.streak,
+      xp: state.xp || 0,
+      lastQuizDate: state.lastQuizDate || 0,
+      unlockedBadges: state.unlockedBadges || [],
       updated: Date.now()
     }));
   } catch (e) {}
@@ -1398,9 +1569,68 @@ function syncToAdmin() {
   try { localStorage.setItem(ADMIN_SYNC_KEY, JSON.stringify(live)); } catch (e) {}
 }
 
+// ===== STREAK / XP / BADGE HELPERS =====
+function updateStreak() {
+  const now = new Date();
+  const todayStr = now.toDateString();
+  const last = state.lastQuizDate || 0;
+  const lastStr = last ? new Date(last).toDateString() : null;
+
+  if (!lastStr) {
+    state.streak = 1;                          // very first quiz ever
+  } else if (todayStr === lastStr) {
+    // same calendar day — streak already counted, don't change
+  } else {
+    const diffDays = (now - new Date(last)) / (1000 * 3600 * 24);
+    state.streak = diffDays < 2 ? state.streak + 1 : 1;
+  }
+  state.lastQuizDate = Date.now();
+}
+
+function checkBadges() {
+  const unlocked = state.unlockedBadges || [];
+  const { done } = overallCount();
+  const vals = Object.values(state.progress).filter(p => p.completed).map(p => p.percent);
+  const avg = vals.length ? Math.round(vals.reduce((a, b) => a + b, 0) / vals.length) : 0;
+
+  if (state.streak >= 1 && !unlocked.includes("streak")) {
+    state.unlockedBadges = [...unlocked, "streak"];
+    return "streak";
+  }
+  if (done >= 1 && !unlocked.includes("first")) {
+    state.unlockedBadges = [...unlocked, "first"];
+    return "first";
+  }
+  if (avg >= 80 && !unlocked.includes("honor")) {
+    state.unlockedBadges = [...unlocked, "honor"];
+    return "honor";
+  }
+  return null;
+}
+
+function showBadgeToast(badge) {
+  const msgs = {
+    streak: "🔥 Streak ustasi! Ketma-ket dars tugatding!",
+    first:  "📚 Birinchi dars! Ajoyib boshlash!",
+    honor:  "⭐ A'lochi! 80%+ o'rtacha bal!"
+  };
+  const app = document.getElementById("app");
+  const toast = document.createElement("div");
+  toast.className = "badge-toast";
+  toast.textContent = msgs[badge] || "🏆 Yangi yutuq qo'lga kiritildi!";
+  app.appendChild(toast);
+  setTimeout(() => {
+    toast.classList.add("toast-hide");
+    setTimeout(() => toast.remove(), 400);
+  }, 3000);
+}
+
 // ===== SEED FAKE PROGRESS =====
 function seedProgress() {
   state.streak = 5;
+  state.xp = 20;
+  state.lastQuizDate = Date.now() - 1000 * 3600 * 20; // 20 h ago → same-day streak safe
+  state.unlockedBadges = ["first"];
   state.progress.hujayra = {
     completed: true,
     percent: 83,
@@ -1421,6 +1651,9 @@ const saved = loadProgress();
 if (saved && saved.progress) {
   state.progress = saved.progress;
   state.streak = saved.streak || 0;
+  state.xp = saved.xp || 0;
+  state.lastQuizDate = saved.lastQuizDate || 0;
+  state.unlockedBadges = saved.unlockedBadges || [];
 } else {
   seedProgress();
   saveProgress();
@@ -1430,6 +1663,36 @@ if (saved && saved.progress) {
 try {
   if (!localStorage.getItem("bio_onboarded")) {
     state.route = { name: "welcome" };
+  } else if (window.location.hash && window.location.hash.length > 1) {
+    const parsedRoute = parseHash(window.location.hash);
+    if (parsedRoute.name !== "welcome") {
+      state.route = parsedRoute;
+      if (["home","lessons","results","profile"].includes(parsedRoute.name)) state.tab = parsedRoute.name;
+      else if (parsedRoute.name === "glossary") state.tab = "signs";
+    }
   }
 } catch (e) {}
+history.replaceState({ route: state.route, tab: state.tab }, "", buildHash(state.route));
 render();
+
+// ===== PULL-TO-REFRESH =====
+(function () {
+  let _startY = 0, _pulling = false, _ind = null;
+  const view = document.getElementById("view");
+  view.addEventListener("touchstart", e => { _startY = e.touches[0].clientY; }, { passive: true });
+  view.addEventListener("touchmove", e => {
+    if (state.route.name !== "home" || view.scrollTop > 0) return;
+    const dy = e.touches[0].clientY - _startY;
+    if (dy > 70 && !_pulling) {
+      _pulling = true;
+      _ind = view.querySelector(".ptr-indicator");
+      if (_ind) _ind.classList.add("ptr-active");
+    }
+  }, { passive: true });
+  view.addEventListener("touchend", () => {
+    if (!_pulling) return;
+    _pulling = false;
+    if (_ind) { _ind.classList.remove("ptr-active"); _ind = null; }
+    if (state.route.name === "home") render();
+  }, { passive: true });
+})();
